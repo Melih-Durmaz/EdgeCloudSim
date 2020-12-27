@@ -143,7 +143,10 @@ function [] = plotGenericResult(rowOfset, columnOfset, yLabel, appType, calculat
         set(hFig, 'PaperPositionMode', 'manual');
         set(hFig, 'PaperPosition',[0 0 pos(3) pos(4)]);
         set(gcf, 'PaperSize', [pos(3) pos(4)]); %Keep the same paper size
-        filename = strcat(folderPath,'\',int2str(rowOfset),'_',int2str(columnOfset),'_',appType);
+%         filename = strcat(folderPath,'\',int2str(rowOfset),'_',int2str(columnOfset),'_',yLabel,'_',appType);
+        filename = strcat(folderPath,'\pdf_result\',appType,'_',yLabel,'_',int2str(rowOfset),'_',int2str(columnOfset));
         saveas(gcf, filename, 'pdf');
+        filename = strcat(folderPath,'\png_result\',appType,'_',yLabel,'_',int2str(rowOfset),'_',int2str(columnOfset));
+        saveas(gcf, filename, 'png');
     end
 end

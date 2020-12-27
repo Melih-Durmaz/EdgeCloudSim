@@ -1,6 +1,7 @@
-% plotAvgFailedTask();
-% close all;
-% plotAvgNetworkDelay();
-% plotAvgProcessingTime();
-% plotAvgFailedTask();
+close all;
+plotAvgFailedTask();
+plotAvgNetworkDelay();
+plotAvgProcessingTime();
+plotAvgFailedTask();
+plotAvgVmUtilization();
 plotTaskFailureReason();

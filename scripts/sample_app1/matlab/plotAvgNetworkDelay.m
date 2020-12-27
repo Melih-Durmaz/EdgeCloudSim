@@ -1,23 +1,21 @@
 function [] = plotAvgNetworkDelay()
     
-    app_1_name = "AUGMENTED_REALITY";
+    run app_names.m
 
-    plotGenericResult(1, 7, 'Average Network Delay (sec)', 'ALL_APPS', '');
-    plotGenericResult(1, 7, {'Average Network Delay';'for Augmented Reality App (sec)'}, app_1_name, '');
-%     plotGenericResult(1, 7, 'Average Network Delay for Health App (sec)', 'HEALTH_APP', '');
-%     plotGenericResult(1, 7, {'Average Network Delay';'for Infotainment App (sec)'}, 'INFOTAINMENT_APP', '');
-%     plotGenericResult(1, 7, {'Average Network Delay';'for Heavy Comp. App (sec)'}, 'HEAVY_COMP_APP', '');
-
-    plotGenericResult(5, 1, 'Average WLAN Delay (sec)', 'ALL_APPS', '');
-    plotGenericResult(5, 1, {'Average WLAN Delay';'for Augmented Reality App (sec)'}, app_1_name, '');
-%     plotGenericResult(5, 1, 'Average WLAN Delay for Health App (sec)', 'HEALTH_APP', '');
-%     plotGenericResult(5, 1, {'Average WLAN Delay';'for Infotainment App (sec)'}, 'INFOTAINMENT_APP', '');
-%     plotGenericResult(5, 1, {'Average WLAN Delay';'for Heavy Comp. App %(sec)'}, 'HEAVY_COMP_APP', '');
-
-    plotGenericResult(5, 3, 'Average WAN Delay (sec)', 'ALL_APPS', '');
-    plotGenericResult(5, 3, {'Average WAN Delay';'for Augmented Reality App (sec)'}, app_1_name, '');
-%     plotGenericResult(5, 3, 'Average WAN Delay for Health App (sec)', 'HEALTH_APP', '');
-%     plotGenericResult(5, 3, {'Average WAN Delay';'for Infotainment App (sec)'}, 'INFOTAINMENT_APP', '');
-%     plotGenericResult(5, 3, {'Average WAN Delay';'for Heavy Comp. App (sec)'}, 'HEAVY_COMP_APP', '');
+    plotGenericResult(1, 7, strcat('Average Network Delay (sec)'), 'ALL_APPS', '');
+    plotGenericResult(1, 7, strcat('Average Network Delay for ',app_name_1_msg,' App (sec)'), app_name_1, '');
+    plotGenericResult(1, 7, strcat('Average Network Delay for ',app_name_2_msg,' App (sec)'), app_name_2, '');
+    plotGenericResult(1, 7, strcat('Average Network Delay for ',app_name_3_msg,' App (sec)'), app_name_3, '');
+    plotGenericResult(1, 7, strcat('Average Network Delay for ',app_name_4_msg,' App (sec)'), app_name_4, '');
+    plotGenericResult(5, 1, strcat('Average WLAN Delay (sec)'), 'ALL_APPS', '');
+    plotGenericResult(5, 1, strcat('Average WLAN Delay for ',app_name_1_msg,' App (sec)'), app_name_1, '');
+    plotGenericResult(5, 1, strcat('Average WLAN Delay for ',app_name_2_msg,' App (sec)'), app_name_2, '');
+    plotGenericResult(5, 1, strcat('Average WLAN Delay for ',app_name_3_msg,' App (sec)'), app_name_3, '');
+    plotGenericResult(5, 1, strcat('Average WLAN Delay for ',app_name_4_msg,' App (sec)'), app_name_4, '');
+    plotGenericResult(5, 3, strcat('Average WAN Delay (sec)'), 'ALL_APPS', '');
+    plotGenericResult(5, 3, strcat('Average WAN Delay for ',app_name_1_msg,' App (sec)'), app_name_1, '');
+    plotGenericResult(5, 3, strcat('Average WAN Delay for ',app_name_2_msg,' App (sec)'), app_name_2, '');
+    plotGenericResult(5, 3, strcat('Average WAN Delay for ',app_name_3_msg,' App (sec)'), app_name_3, '');
+    plotGenericResult(5, 3, strcat('Average WAN Delay for ',app_name_4_msg,' App (sec)'), app_name_4, '');
     
 end

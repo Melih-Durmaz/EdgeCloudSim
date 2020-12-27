@@ -24,7 +24,7 @@ function [ret_val] = getConfiguration(argType)
     elseif(argType == 10)
         ret_val = 'Number of Mobile Devices'; %Common text for x axis
     elseif(argType == 11)
-        ret_val = 1; %return 1 if you want to save figure as pdf
+        ret_val = 1; %return 1 if you want to save figure as pdf and png
     elseif(argType == 12)
         ret_val = 0; %return 1 if you want to plot errors
     elseif(argType == 20)
